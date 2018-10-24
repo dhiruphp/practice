@@ -6,6 +6,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { LoginRoutingModule } from './login-routing.module';
 import { LoginComponent } from './login.component';
+import { ErrorMessageDirective } from '.././error-message.directive';
 
 @NgModule({
     imports: [
@@ -17,6 +18,6 @@ import { LoginComponent } from './login.component';
         FlexLayoutModule,
         ReactiveFormsModule
     ],
-    declarations: [LoginComponent]
+    declarations: [LoginComponent, ErrorMessageDirective]
 })
 export class LoginModule {}
